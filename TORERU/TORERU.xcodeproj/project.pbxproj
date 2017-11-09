@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D44923841FB3F2EC006D1040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44923831FB3F2EC006D1040 /* AppDelegate.swift */; };
+		D44923861FB3F2EC006D1040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44923851FB3F2EC006D1040 /* ViewController.swift */; };
+		D44923891FB3F2EC006D1040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44923871FB3F2EC006D1040 /* Main.storyboard */; };
+		D449238B1FB3F2EC006D1040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D449238A1FB3F2EC006D1040 /* Assets.xcassets */; };
+		D449238E1FB3F2EC006D1040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D449238C1FB3F2EC006D1040 /* LaunchScreen.storyboard */; };
+		D44923991FB3F2EC006D1040 /* TORERUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44923981FB3F2EC006D1040 /* TORERUTests.swift */; };
+		D44923A41FB3F2ED006D1040 /* TORERUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44923A31FB3F2ED006D1040 /* TORERUUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D44923951FB3F2EC006D1040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D44923781FB3F2EC006D1040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D449237F1FB3F2EC006D1040;
+			remoteInfo = TORERU;
+		};
+		D44923A01FB3F2ED006D1040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D44923781FB3F2EC006D1040 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D449237F1FB3F2EC006D1040;
+			remoteInfo = TORERU;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D44923801FB3F2EC006D1040 /* TORERU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TORERU.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44923831FB3F2EC006D1040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D44923851FB3F2EC006D1040 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D44923881FB3F2EC006D1040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D449238A1FB3F2EC006D1040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D449238D1FB3F2EC006D1040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D449238F1FB3F2EC006D1040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44923941FB3F2EC006D1040 /* TORERUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TORERUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44923981FB3F2EC006D1040 /* TORERUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TORERUTests.swift; sourceTree = "<group>"; };
+		D449239A1FB3F2EC006D1040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D449239F1FB3F2EC006D1040 /* TORERUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TORERUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44923A31FB3F2ED006D1040 /* TORERUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TORERUUITests.swift; sourceTree = "<group>"; };
+		D44923A51FB3F2ED006D1040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D449237D1FB3F2EC006D1040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44923911FB3F2EC006D1040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D449239C1FB3F2EC006D1040 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D44923771FB3F2EC006D1040 = {
+			isa = PBXGroup;
+			children = (
+				D44923821FB3F2EC006D1040 /* TORERU */,
+				D44923971FB3F2EC006D1040 /* TORERUTests */,
+				D44923A21FB3F2ED006D1040 /* TORERUUITests */,
+				D44923811FB3F2EC006D1040 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D44923811FB3F2EC006D1040 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D44923801FB3F2EC006D1040 /* TORERU.app */,
+				D44923941FB3F2EC006D1040 /* TORERUTests.xctest */,
+				D449239F1FB3F2EC006D1040 /* TORERUUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D44923821FB3F2EC006D1040 /* TORERU */ = {
+			isa = PBXGroup;
+			children = (
+				D44923831FB3F2EC006D1040 /* AppDelegate.swift */,
+				D44923851FB3F2EC006D1040 /* ViewController.swift */,
+				D44923871FB3F2EC006D1040 /* Main.storyboard */,
+				D449238A1FB3F2EC006D1040 /* Assets.xcassets */,
+				D449238C1FB3F2EC006D1040 /* LaunchScreen.storyboard */,
+				D449238F1FB3F2EC006D1040 /* Info.plist */,
+			);
+			path = TORERU;
+			sourceTree = "<group>";
+		};
+		D44923971FB3F2EC006D1040 /* TORERUTests */ = {
+			isa = PBXGroup;
+			children = (
+				D44923981FB3F2EC006D1040 /* TORERUTests.swift */,
+				D449239A1FB3F2EC006D1040 /* Info.plist */,
+			);
+			path = TORERUTests;
+			sourceTree = "<group>";
+		};
+		D44923A21FB3F2ED006D1040 /* TORERUUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D44923A31FB3F2ED006D1040 /* TORERUUITests.swift */,
+				D44923A51FB3F2ED006D1040 /* Info.plist */,
+			);
+			path = TORERUUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D449237F1FB3F2EC006D1040 /* TORERU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44923A81FB3F2ED006D1040 /* Build configuration list for PBXNativeTarget "TORERU" */;
+			buildPhases = (
+				D449237C1FB3F2EC006D1040 /* Sources */,
+				D449237D1FB3F2EC006D1040 /* Frameworks */,
+				D449237E1FB3F2EC006D1040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TORERU;
+			productName = TORERU;
+			productReference = D44923801FB3F2EC006D1040 /* TORERU.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D44923931FB3F2EC006D1040 /* TORERUTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44923AB1FB3F2ED006D1040 /* Build configuration list for PBXNativeTarget "TORERUTests" */;
+			buildPhases = (
+				D44923901FB3F2EC006D1040 /* Sources */,
+				D44923911FB3F2EC006D1040 /* Frameworks */,
+				D44923921FB3F2EC006D1040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D44923961FB3F2EC006D1040 /* PBXTargetDependency */,
+			);
+			name = TORERUTests;
+			productName = TORERUTests;
+			productReference = D44923941FB3F2EC006D1040 /* TORERUTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D449239E1FB3F2EC006D1040 /* TORERUUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44923AE1FB3F2ED006D1040 /* Build configuration list for PBXNativeTarget "TORERUUITests" */;
+			buildPhases = (
+				D449239B1FB3F2EC006D1040 /* Sources */,
+				D449239C1FB3F2EC006D1040 /* Frameworks */,
+				D449239D1FB3F2EC006D1040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D44923A11FB3F2ED006D1040 /* PBXTargetDependency */,
+			);
+			name = TORERUUITests;
+			productName = TORERUUITests;
+			productReference = D449239F1FB3F2EC006D1040 /* TORERUUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D44923781FB3F2EC006D1040 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Matsumoto Kazuki";
+				TargetAttributes = {
+					D449237F1FB3F2EC006D1040 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D44923931FB3F2EC006D1040 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D449237F1FB3F2EC006D1040;
+					};
+					D449239E1FB3F2EC006D1040 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D449237F1FB3F2EC006D1040;
+					};
+				};
+			};
+			buildConfigurationList = D449237B1FB3F2EC006D1040 /* Build configuration list for PBXProject "TORERU" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D44923771FB3F2EC006D1040;
+			productRefGroup = D44923811FB3F2EC006D1040 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D449237F1FB3F2EC006D1040 /* TORERU */,
+				D44923931FB3F2EC006D1040 /* TORERUTests */,
+				D449239E1FB3F2EC006D1040 /* TORERUUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D449237E1FB3F2EC006D1040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D449238E1FB3F2EC006D1040 /* LaunchScreen.storyboard in Resources */,
+				D449238B1FB3F2EC006D1040 /* Assets.xcassets in Resources */,
+				D44923891FB3F2EC006D1040 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44923921FB3F2EC006D1040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D449239D1FB3F2EC006D1040 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D449237C1FB3F2EC006D1040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44923861FB3F2EC006D1040 /* ViewController.swift in Sources */,
+				D44923841FB3F2EC006D1040 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44923901FB3F2EC006D1040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44923991FB3F2EC006D1040 /* TORERUTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D449239B1FB3F2EC006D1040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44923A41FB3F2ED006D1040 /* TORERUUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D44923961FB3F2EC006D1040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D449237F1FB3F2EC006D1040 /* TORERU */;
+			targetProxy = D44923951FB3F2EC006D1040 /* PBXContainerItemProxy */;
+		};
+		D44923A11FB3F2ED006D1040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D449237F1FB3F2EC006D1040 /* TORERU */;
+			targetProxy = D44923A01FB3F2ED006D1040 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D44923871FB3F2EC006D1040 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D44923881FB3F2EC006D1040 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D449238C1FB3F2EC006D1040 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D449238D1FB3F2EC006D1040 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D44923A61FB3F2ED006D1040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D44923A71FB3F2ED006D1040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D44923A91FB3F2ED006D1040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TORERU/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matsu.TORERU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D44923AA1FB3F2ED006D1040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TORERU/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matsu.TORERU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D44923AC1FB3F2ED006D1040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TORERUTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matsu.TORERUTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TORERU.app/TORERU";
+			};
+			name = Debug;
+		};
+		D44923AD1FB3F2ED006D1040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TORERUTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matsu.TORERUTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TORERU.app/TORERU";
+			};
+			name = Release;
+		};
+		D44923AF1FB3F2ED006D1040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TORERUUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matsu.TORERUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TORERU;
+			};
+			name = Debug;
+		};
+		D44923B01FB3F2ED006D1040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TORERUUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.matsu.TORERUUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TORERU;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D449237B1FB3F2EC006D1040 /* Build configuration list for PBXProject "TORERU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44923A61FB3F2ED006D1040 /* Debug */,
+				D44923A71FB3F2ED006D1040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44923A81FB3F2ED006D1040 /* Build configuration list for PBXNativeTarget "TORERU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44923A91FB3F2ED006D1040 /* Debug */,
+				D44923AA1FB3F2ED006D1040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44923AB1FB3F2ED006D1040 /* Build configuration list for PBXNativeTarget "TORERUTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44923AC1FB3F2ED006D1040 /* Debug */,
+				D44923AD1FB3F2ED006D1040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44923AE1FB3F2ED006D1040 /* Build configuration list for PBXNativeTarget "TORERUUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44923AF1FB3F2ED006D1040 /* Debug */,
+				D44923B01FB3F2ED006D1040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D44923781FB3F2EC006D1040 /* Project object */;
+}
