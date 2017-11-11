@@ -14,6 +14,7 @@
 		D449238E1FB3F2EC006D1040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D449238C1FB3F2EC006D1040 /* LaunchScreen.storyboard */; };
 		D44923991FB3F2EC006D1040 /* TORERUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44923981FB3F2EC006D1040 /* TORERUTests.swift */; };
 		D44923A41FB3F2ED006D1040 /* TORERUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44923A31FB3F2ED006D1040 /* TORERUUITests.swift */; };
+		D4C2E42F1FB3FA2E00310A48 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C2E42E1FB3FA2E00310A48 /* Home.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D449239F1FB3F2EC006D1040 /* TORERUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TORERUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44923A31FB3F2ED006D1040 /* TORERUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TORERUUITests.swift; sourceTree = "<group>"; };
 		D44923A51FB3F2ED006D1040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4C2E42E1FB3FA2E00310A48 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		D44923821FB3F2EC006D1040 /* TORERU */ = {
 			isa = PBXGroup;
 			children = (
+				D4C2E4291FB3F87A00310A48 /* アセット */,
 				D44923831FB3F2EC006D1040 /* AppDelegate.swift */,
 				D44923851FB3F2EC006D1040 /* ViewController.swift */,
 				D44923871FB3F2EC006D1040 /* Main.storyboard */,
@@ -123,6 +126,22 @@
 				D44923A51FB3F2ED006D1040 /* Info.plist */,
 			);
 			path = TORERUUITests;
+			sourceTree = "<group>";
+		};
+		D4C2E4291FB3F87A00310A48 /* アセット */ = {
+			isa = PBXGroup;
+			children = (
+				D4C2E42D1FB3FA2E00310A48 /* Image */,
+			);
+			path = "アセット";
+			sourceTree = "<group>";
+		};
+		D4C2E42D1FB3FA2E00310A48 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D4C2E42E1FB3FA2E00310A48 /* Home.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4C2E42F1FB3FA2E00310A48 /* Home.png in Resources */,
 				D449238E1FB3F2EC006D1040 /* LaunchScreen.storyboard in Resources */,
 				D449238B1FB3F2EC006D1040 /* Assets.xcassets in Resources */,
 				D44923891FB3F2EC006D1040 /* Main.storyboard in Resources */,
