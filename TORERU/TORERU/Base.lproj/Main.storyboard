@@ -21,17 +21,26 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Home.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rq6-ue-Qao">
                                 <rect key="frame" x="-47" y="-132" width="862" height="1288"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TORERU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YML-Q9-4lr">
+                                <rect key="frame" x="290" y="482" width="188" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="0.35648256395864519" green="0.53148555976351886" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Rq6-ue-Qao" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AZg-cL-Kcp"/>
+                            <constraint firstItem="YML-Q9-4lr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e1f-mf-NfJ"/>
                             <constraint firstItem="Rq6-ue-Qao" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lGX-u8-cC6"/>
+                            <constraint firstItem="YML-Q9-4lr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="riF-Fd-LnJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116.40625" y="104.8828125"/>
         </scene>
     </scenes>
     <resources>
