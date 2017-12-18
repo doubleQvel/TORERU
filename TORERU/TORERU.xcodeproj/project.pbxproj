@@ -14,6 +14,8 @@
 		D449238E1FB3F2EC006D1040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D449238C1FB3F2EC006D1040 /* LaunchScreen.storyboard */; };
 		D44923991FB3F2EC006D1040 /* TORERUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44923981FB3F2EC006D1040 /* TORERUTests.swift */; };
 		D44923A41FB3F2ED006D1040 /* TORERUUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44923A31FB3F2ED006D1040 /* TORERUUITests.swift */; };
+		D45E8B8D1FDF7F390067AD90 /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45E8B8C1FDF7F390067AD90 /* Scan.storyboard */; };
+		D45E8B8F1FDF7F4D0067AD90 /* ViewControllerScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45E8B8E1FDF7F4D0067AD90 /* ViewControllerScan.swift */; };
 		D4C2E42F1FB3FA2E00310A48 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C2E42E1FB3FA2E00310A48 /* Home.png */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		D449239F1FB3F2EC006D1040 /* TORERUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TORERUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44923A31FB3F2ED006D1040 /* TORERUUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TORERUUITests.swift; sourceTree = "<group>"; };
 		D44923A51FB3F2ED006D1040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45E8B8C1FDF7F390067AD90 /* Scan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scan.storyboard; sourceTree = "<group>"; };
+		D45E8B8E1FDF7F4D0067AD90 /* ViewControllerScan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerScan.swift; sourceTree = "<group>"; };
 		D4C2E42E1FB3FA2E00310A48 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +107,8 @@
 				D44923831FB3F2EC006D1040 /* AppDelegate.swift */,
 				D44923851FB3F2EC006D1040 /* ViewController.swift */,
 				D44923871FB3F2EC006D1040 /* Main.storyboard */,
+				D45E8B8C1FDF7F390067AD90 /* Scan.storyboard */,
+				D45E8B8E1FDF7F4D0067AD90 /* ViewControllerScan.swift */,
 				D449238A1FB3F2EC006D1040 /* Assets.xcassets */,
 				D449238C1FB3F2EC006D1040 /* LaunchScreen.storyboard */,
 				D449238F1FB3F2EC006D1040 /* Info.plist */,
@@ -253,6 +259,7 @@
 			files = (
 				D4C2E42F1FB3FA2E00310A48 /* Home.png in Resources */,
 				D449238E1FB3F2EC006D1040 /* LaunchScreen.storyboard in Resources */,
+				D45E8B8D1FDF7F390067AD90 /* Scan.storyboard in Resources */,
 				D449238B1FB3F2EC006D1040 /* Assets.xcassets in Resources */,
 				D44923891FB3F2EC006D1040 /* Main.storyboard in Resources */,
 			);
@@ -279,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45E8B8F1FDF7F4D0067AD90 /* ViewControllerScan.swift in Sources */,
 				D44923861FB3F2EC006D1040 /* ViewController.swift in Sources */,
 				D44923841FB3F2EC006D1040 /* AppDelegate.swift in Sources */,
 			);
