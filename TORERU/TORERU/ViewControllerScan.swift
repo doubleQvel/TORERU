@@ -15,7 +15,12 @@ class ViewControllerScan: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func moveSeque(_ sender: Any) {
+        let story = UIStoryboard(name: "SubjectList", bundle: nil )
+        let vc = story.instantiateInitialViewController() as! ViewControllerList
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

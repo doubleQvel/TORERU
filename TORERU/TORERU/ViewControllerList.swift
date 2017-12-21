@@ -55,6 +55,11 @@ UICollectionViewDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func moveHome(_ sender: Any) {
+        let story = UIStoryboard(name: "Main", bundle: nil )
+        let vc = story.instantiateInitialViewController() as! ViewController
+        self.present(vc, animated: true, completion: nil)
+    }
     
 
     /*
