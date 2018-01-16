@@ -35,6 +35,6 @@ ARuke/vendor/*
 *.DS_Store
 
 #info.plist
-TORERU/TORERU/info.plist
+#TORERU/TORERU/info.plist
 #UserInterfaceState
 TORERU/TORERU.xcodeproj/project.xcworkspace/xcuserdata/

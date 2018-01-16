@@ -35,23 +35,35 @@ UICollectionViewDelegate{
         
         // Tag番号を使ってLabelのインスタンス生成
         let label = testCell.contentView.viewWithTag(1) as! UILabel
-        let name = ["時限","月","火","水","木","金","1","","","","","","2","","","","","","3","","os","","","","4","","","","","","5"]
-        label.text = name[indexPath.row]
-        
+        //let name = ["時限","月","火","水","木","金","1","","","","","","2","","","","","","3","","os","","","","4","","","","","","5"]
+        let week = ["時限","月","火","水","木","金"]
+        let subject = ["1","","","","","","2","","","","","","3","","os","","","","4","","","","","","5","","","","",""]
+        //label.text = name[indexPath.row]
+        if indexPath.section == 0{
+            label.text = week[indexPath.row]
+        }else{
+            label.text = subject[indexPath.row]
+        }
         return testCell
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // section数は１つ
-        return 1//2
+        //return 1
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         // 要素数を入れる、要素以上の数字を入れると表示でエラーとなる
-        //曜日7
-        //授業数42
-        return 31;
+        //曜日6
+        if section == 0{
+            return 6
+        }else{
+            return 30
+        }
+        //授業数
+        //return 31;
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
