@@ -33,3 +33,6 @@ ARuke/vendor/*
 
 # Mac
 *.DS_Store
+
+#info.plist
+TORERU/TORERU/info.plist
