@@ -28,11 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let secondVC = secondSB.instantiateInitialViewController()! as UIViewController
         secondVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 2)
         viewControllers.append(secondVC)
-//        // 3ページ目になるViewController
-//        let thirdSB = UIStoryboard(name: "Third", bundle: nil)
-//        let thirdVC = thirdSB.instantiateInitialViewController()! as UIViewController
-//        thirdVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 3)
-//        viewControllers.append(thirdVC)
+        // 3ページ目になるViewController
+        let thirdSB = UIStoryboard(name: "SubjectList", bundle: nil)
+        let thirdVC = thirdSB.instantiateInitialViewController()! as UIViewController
+        thirdVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 3)
+        viewControllers.append(thirdVC)
         // ViewControllerをセット
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers(viewControllers, animated: false)
