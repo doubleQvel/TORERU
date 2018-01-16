@@ -43,12 +43,14 @@ UICollectionViewDelegate{
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // section数は１つ
-        return 1
+        return 1//2
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         // 要素数を入れる、要素以上の数字を入れると表示でエラーとなる
+        //曜日7
+        //授業数42
         return 31;
     }
     override func didReceiveMemoryWarning() {
