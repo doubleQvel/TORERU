@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -44,8 +43,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="143"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="os" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gj-it-WWk">
-                                                    <rect key="frame" x="10" y="10" width="95" height="64"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="os" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gj-it-WWk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="143"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -53,10 +52,10 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="5Gj-it-WWk" firstAttribute="leading" secondItem="7gM-zM-hLR" secondAttribute="leadingMargin" constant="-6" id="1CI-sH-WqA"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="5Gj-it-WWk" secondAttribute="trailing" constant="4" id="hmP-9X-XFn"/>
-                                            <constraint firstItem="5Gj-it-WWk" firstAttribute="centerY" secondItem="7gM-zM-hLR" secondAttribute="centerY" id="mJ1-PZ-L0u"/>
-                                            <constraint firstItem="5Gj-it-WWk" firstAttribute="top" secondItem="7gM-zM-hLR" secondAttribute="topMargin" constant="-10" id="uJ6-t0-lsD"/>
+                                            <constraint firstItem="5Gj-it-WWk" firstAttribute="top" secondItem="7gM-zM-hLR" secondAttribute="top" id="0tg-NX-Pfp"/>
+                                            <constraint firstAttribute="bottom" secondItem="5Gj-it-WWk" secondAttribute="bottom" id="DcA-4A-09c"/>
+                                            <constraint firstAttribute="trailing" secondItem="5Gj-it-WWk" secondAttribute="trailing" id="JiE-EW-ag5"/>
+                                            <constraint firstItem="5Gj-it-WWk" firstAttribute="leading" secondItem="7gM-zM-hLR" secondAttribute="leading" id="hwF-IQ-VF5"/>
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
