@@ -16,6 +16,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // ページを格納する配列
+        var viewControllers: [UIViewController] = []
+        // 1ページ目になるViewController
+        let firstSB = UIStoryboard(name: "Main", bundle: nil)
+        let firstVC = firstSB.instantiateInitialViewController()! as UIViewController
+        firstVC.tabBarItem = UITabBarItem(title: "時間割表", image: UIImage(named: "tabBer_icon.png"), tag: 1)
+        viewControllers.append(firstVC)
+        // 2ページ目になるViewController
+        let secondSB = UIStoryboard(name: "Scan", bundle: nil)
+        let secondVC = secondSB.instantiateInitialViewController()! as UIViewController
+        secondVC.tabBarItem = UITabBarItem(title: "入力", image: UIImage(named: "tabBer_icon2.png"), tag: 2)
+        viewControllers.append(secondVC)
+//        // 3ページ目になるViewController
+//        let thirdSB = UIStoryboard(name: "Third", bundle: nil)
+//        let thirdVC = thirdSB.instantiateInitialViewController()! as UIViewController
+//        thirdVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 3)
+//        viewControllers.append(thirdVC)
+        // ViewControllerをセット
+        let tabBarController = UITabBarController()
+        tabBarController.setViewControllers(viewControllers, animated: false)
+        // rootViewControllerをUITabBarControllerにする
+        window = UIWindow()
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
         return true
     }
 
