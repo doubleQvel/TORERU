@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // ページを格納する配列
         var viewControllers: [UIViewController] = []
         // 1ページ目になるViewController
-        let firstSB = UIStoryboard(name: "Main", bundle: nil)
+        let firstSB = UIStoryboard(name: "SubjectList", bundle: nil)
         let firstVC = firstSB.instantiateInitialViewController()! as UIViewController
         firstVC.tabBarItem = UITabBarItem(title: "時間割表", image: UIImage(named: "tabBer_icon.png"), tag: 1)
         viewControllers.append(firstVC)
@@ -29,10 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         secondVC.tabBarItem = UITabBarItem(title: "入力", image: UIImage(named: "tabBer_icon2.png"), tag: 2)
         viewControllers.append(secondVC)
         // 3ページ目になるViewController
-        let thirdSB = UIStoryboard(name: "SubjectList", bundle: nil)
-        let thirdVC = thirdSB.instantiateInitialViewController()! as UIViewController
-        thirdVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 3)
-        viewControllers.append(thirdVC)
+//        let thirdSB = UIStoryboard(name: "SubjectList", bundle: nil)
+//        let thirdVC = thirdSB.instantiateInitialViewController()! as UIViewController
+//        thirdVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 3)
+//        viewControllers.append(thirdVC)
         // ViewControllerをセット
         let tabBarController = UITabBarController()
         tabBarController.setViewControllers(viewControllers, animated: false)
