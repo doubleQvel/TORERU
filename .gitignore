@@ -23,10 +23,10 @@ DerivedData/
 !default.perspectivev3
 
 # CocoaPod
-ARuke/Pods/*
+#ARuke/Pods/*
 
 # Gem
-ARuke/vendor/*
+#ARuke/vendor/*
 
 # env
 .env
@@ -34,7 +34,11 @@ ARuke/vendor/*
 # Mac
 *.DS_Store
 
-#info.plist
-#TORERU/TORERU/info.plist
 #UserInterfaceState
 TORERU/TORERU.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+!Carthage/Build

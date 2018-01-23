@@ -7,19 +7,37 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewControllerList: UIViewController, UICollectionViewDataSource,
 UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
 
     @IBOutlet weak var listview: UICollectionView!
+    let week = ["時限","月","火","水","木","金"]
+    var subject = ["1","","","","","","2","","","","","","3","","os","","","","4","","","","","","5","","","","",""]
+    let realm = try! Realm()
     override func viewDidLoad() {
         super.viewDidLoad()
         listview.delegate = self
         listview.dataSource = self
         // Do any additional setup after loading the view.
+//        let refreshControl = UIRefreshControl()
+//        self.view.addSubview(refreshControl)
+        let mySubjects = realm.objects(Subject.self)
+        for mySubject in mySubjects{
+            if mySubject.week == "月"{
+                subject[1] = mySubject.name
+            }else if mySubject.week == "火"{
+                subject[2] = mySubject.name
+            }else if mySubject.week == "木"{
+                subject[4] = mySubject.name
+            }
+        }
     }
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         
         // "Cell" はストーリーボードで設定したセルのID
         let testCell:UICollectionViewCell =
@@ -36,8 +54,6 @@ UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
         // Tag番号を使ってLabelのインスタンス生成
         let label = testCell.contentView.viewWithTag(1) as! UILabel
         //let name = ["時限","月","火","水","木","金","1","","","","","","2","","","","","","3","","os","","","","4","","","","","","5"]
-        let week = ["時限","月","火","水","木","金"]
-        let subject = ["1","","","","","","2","","","","","","3","","os","","","","4","","","","","","5","","","","",""]
         //label.text = name[indexPath.row]
         if indexPath.section == 0{
             label.text = week[indexPath.row]

@@ -7,22 +7,25 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewControllerScan: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
-
+    @IBOutlet weak var subjectName: UITextField!
     @IBOutlet weak var DayScrollbar: UITextField!
     
     @IBOutlet weak var TimeScrollbar: UITextField!
     
     var pickerView1: UIPickerView = UIPickerView()
     var pickerView2: UIPickerView = UIPickerView()
-    let DayList = ["月", "火", "水", "木", "金"]
-    let TimeList = ["1", "2", "3", "4", "5"]
-    
+    let DayList = ["","月", "火", "水", "木", "金"]
+    let TimeList = ["","1", "2", "3", "4", "5"]
+    //データベースの設定
+    let realm = try! Realm()
+    let mySubjects = Subject()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //スクロールバーの設定
         pickerView1.delegate = self
         pickerView2.delegate = self
         pickerView1.dataSource = self
@@ -39,6 +42,7 @@ class ViewControllerScan: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         self.DayScrollbar.inputView = pickerView1
         self.TimeScrollbar.inputView = pickerView2
         self.DayScrollbar.inputAccessoryView = Scrollbar
+        self.TimeScrollbar.inputAccessoryView = Scrollbar
     }
     
     
@@ -50,8 +54,10 @@ class ViewControllerScan: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         if pickerView == pickerView1 {
             return DayList.count
         }
-        else {
+        else if pickerView == pickerView2{
             return TimeList.count
+        }else{
+            return 0
         }
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -89,6 +95,18 @@ class ViewControllerScan: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
         // Do any additional setup after loading the view.
+    @IBAction func pushButton(_ sender: Any) {
+        //データの書き込み
+        if TimeScrollbar.text != "" && DayScrollbar.text != ""{
+            mySubjects.name = subjectName.text!
+            mySubjects.gensu = Int(TimeScrollbar.text!)!
+            mySubjects.week = DayScrollbar.text!
+            try! realm.write {
+                realm.add(mySubjects)
+            }
+        }//それ以外はアラート
+    }
+    
     
 
     override func didReceiveMemoryWarning() {
