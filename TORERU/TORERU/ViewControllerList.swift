@@ -14,7 +14,7 @@ UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
 
     @IBOutlet weak var listview: UICollectionView!
     let week = ["時限","月","火","水","木","金"]
-    var subject = ["1","","","","","","2","","","","","","3","","os","","","","4","","","","","","5","","","","",""]
+    var subject = ["1","","","","","","2","","","","","","3","","","","","","4","","","","","","5","","","","",""]
     let realm = try! Realm()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,15 +23,19 @@ UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
         // Do any additional setup after loading the view.
 //        let refreshControl = UIRefreshControl()
 //        self.view.addSubview(refreshControl)
-        let mySubjects = realm.objects(Subject.self)
-        for mySubject in mySubjects{
-            if mySubject.week == "月"{
-                subject[1] = mySubject.name
-            }else if mySubject.week == "火"{
-                subject[2] = mySubject.name
-            }else if mySubject.week == "木"{
-                subject[4] = mySubject.name
+        var i=0
+        for day in week{
+            if day == "時限"{
+                continue
             }
+            for num in 0..<5{
+                let predicate = NSPredicate(format: "week == '\(day)' AND gensu == \(num+1)")
+                let s = realm.objects(Subject.self).filter(predicate)
+                if s.count != 0{
+                    subject[num*(i-1)+i+1] = s[0].name
+                }
+            }
+            i += 1
         }
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -92,6 +96,10 @@ UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
         let height: CGFloat = width * 1.5
         return CGSize(width: width, height: height)
         
+    }
+    @IBAction func loadButton(_ sender: Any) {
+        loadView()
+        self.viewDidLoad()
     }
     
 
