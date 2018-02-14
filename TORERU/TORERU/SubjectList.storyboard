@@ -13,7 +13,6 @@
         <!--View Controller List-->
         <scene sceneID="DBI-Al-IxE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9f4-27-Dl4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="bSl-c4-vtm" customClass="ViewControllerList" customModule="TORERU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7iL-wj-7wx">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
@@ -60,10 +59,9 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwz-Te-yro">
-                                <rect key="frame" x="595" y="20" width="114" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwz-Te-yro">
+                                <rect key="frame" x="615" y="20" width="94" height="40"/>
+                                <state key="normal" title="Button" image="reloadbutton.png"/>
                                 <connections>
                                     <action selector="loadButton:" destination="bSl-c4-vtm" eventType="touchUpInside" id="sKu-b6-NzL"/>
                                 </connections>
@@ -82,8 +80,12 @@
                         <outlet property="listview" destination="DvI-3O-Nln" id="OhY-iZ-4xZ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9f4-27-Dl4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-364.0625" y="75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="reloadbutton.png" width="40" height="40"/>
+    </resources>
 </document>
