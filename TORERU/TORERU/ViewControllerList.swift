@@ -97,6 +97,10 @@ UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
         return CGSize(width: width, height: height)
         
     }
+    @IBAction func loadButton(_ sender: Any) {
+        loadView()
+        self.viewDidLoad()
+    }
     
 
     /*
