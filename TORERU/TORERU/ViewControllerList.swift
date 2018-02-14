@@ -54,7 +54,10 @@ UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
         
         // UIImageをUIImageViewのimageとして設定
      
-        testCell.backgroundColor = UIColor.lightGray
+        //testCell.backgroundColor = UIColor.brown
+        testCell.backgroundColor = UIColor(red:0.3,green:0.8,blue:0.8,alpha:0.4)
+        
+        
         // Tag番号を使ってLabelのインスタンス生成
         let label = testCell.contentView.viewWithTag(1) as! UILabel
         //let name = ["時限","月","火","水","木","金","1","","","","","","2","","","","","","3","","os","","","","4","","","","","","5"]
